@@ -1,0 +1,12 @@
+1 NVIDIA GPU function(s) discovered
+===== GPU 1/1: PCI\VEN_10DE&DEV_2D04&SUBSYS_<subsys>&REV_A1\<instance> =====
+ranges:
+  84000000-880fffff (65 MiB)
+  6200000000-6201ffffff (32 MiB)
+map BAR0@0x6200000000 failed: MAP_PHYS ioctl failed (win32 error 5)
+map BAR0@0x84000000 failed: MAP_PHYS ioctl failed (win32 error 5)
+NVAPI wake unavailable: nvapi.dll not loadable - NVIDIA driver installed?
+map BAR0@0x6200000000 failed: MAP_PHYS ioctl failed (win32 error 5)
+map BAR0@0x84000000 failed: MAP_PHYS ioctl failed (win32 error 5)
+no candidate range decoded as an NVIDIA PMC - card skipped
+driver service removed (remove-when-done)

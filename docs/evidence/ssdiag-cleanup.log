@@ -1,0 +1,28 @@
+﻿whoami: <host>\<user>
+--- sc stop ---
+[SC] ControlService 失败 1052:
+
+请求的控件对此服务无效。
+
+
+--- sc delete ---
+[SC] DeleteService 失败 1072:
+
+指定的服务已标记为删除。
+
+
+--- sc query after ---
+
+SERVICE_NAME: SSDIAG_PMXDRV 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+--- service key present: True ---
+file present: %TEMP%\ssdiag-pmxdrv.sys
+file in use: 对路径“%TEMP%\ssdiag-pmxdrv.sys”的访问被拒绝。
+---DONE---

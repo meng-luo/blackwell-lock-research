@@ -1,0 +1,29 @@
+# ── NVIDIA 专有固件 / 驱动包：绝不入库 ──────────────────────────
+gb206-fw/
+*.bin
+*.elf
+*.run
+*.zst
+*.tar
+*.gz
+
+# ── 三个独立子仓库（各自单独管理，不纳入本仓库）─────────────────
+gpu-unlock/
+nv-uefi-unlocker/
+rtx30-gpu-unlock-backup/
+
+# ── 通用 ────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.vscode/
+.idea/
+*.tmp
+*.log.bak
+Thumbs.db
+desktop.ini
+
+# �̼������ȫ�ĵ�����������ر�����������
+*_code.json
+*.disasm
+*.asm

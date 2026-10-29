@@ -1,0 +1,45 @@
+# NOTICE — 许可范围与第三方内容
+
+## 本仓库的许可划分
+
+| 内容 | 位置 | 许可 |
+|---|---|---|
+| 脚本 | `analysis/tools/*.py` | **MIT**（见 `LICENSE`） |
+| 文档与分析报告 | `docs/*.md`、`docs/evidence/*.log`、`analysis/reports/*.md`、`analysis/reports/*.csv`、`README.md` | **CC BY 4.0**（见 `docs/LICENSE.md`） |
+
+## 第三方内容
+
+- **NVIDIA `open-gpu-kernel-modules`** — MIT。本仓库引用的源码片段与 `file:line`
+  定位均指向该项目，版权归 NVIDIA 所有，引用不改变其原许可。
+- **kernel.org nova-core 文档** — 按原文档许可引用（链接形式）。
+- **社区项目结论**（`Zagitta/gpu-unlock`、`JustAResearcher/gpu-unlock-ada`、`nlzy/turing-unlock`、
+  `Consensus-Protocol/cmp170hx`、`phiraml/gpu-unlock-blackwell`）——本仓库仅引用其公开结论作为对照，
+  **不包含其代码**。
+
+## 本仓库刻意不包含的内容
+
+- NVIDIA 专有固件（`gsp_*.bin`、`ucodes_*.bin`、`.fwimage` 内嵌镜像、FMC 载荷）
+- 驱动安装包（`.run`）及其解包中间产物
+- 任何密钥材料、签名、公钥二进制
+- 固件的完整反汇编转储（如镜像逐指令 Listing）；部分报告提到这类本地文件（如 
+vrx-img00-code.json），**未随仓库发布**
+- 可武器化的利用工具（payload 生成器、ROP 链、写保护寄存器的代码）
+
+## 免责
+
+本项目为可行性边界研究，不提供解锁手段，也不对任何使用后果负责。
+所有实测均在作者自有硬件上进行，且仅限只读操作。
+
+## 文档许可全文要点（CC BY 4.0）
+
+来源：<https://creativecommons.org/licenses/by/4.0/>
+
+- **可共享**：以任何媒介或格式复制、发行本作品
+- **可演绎**：修改、转换、以本作品为基础创作，用于任何目的（含商业目的）
+- **条件（署名）**：须给出适当署名、提供许可链接、说明是否作出修改。建议格式：
+
+  > 来源：blackwell-lock-research（https://github.com/meng-luo/blackwell-lock-research），
+  > 许可：CC BY 4.0
+
+- 不得附加法律条款或技术措施限制他人行使许可授予的权利
+- 按"现状"提供，不附任何明示或默示担保
